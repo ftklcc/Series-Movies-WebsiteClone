@@ -440,13 +440,63 @@ section {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin: 40px 0;
+     margin: 20px 0;
+}
+
+/** new episde hamburger start  */
+#newEpisodeCheckbox {
+     display: none;
+}
+
+.newEpisodeCheckboxLabel {
+     width: 30px;
+     height: 2px;
+     background-color: #fff;
+     position: relative;
+     border-radius: var(--border-Radius);
+     cursor: pointer;
+     transition: var(--trans);
+}
+
+.newEpisodeCheckboxLabel::before,
+.newEpisodeCheckboxLabel::after {
+     content: "";
+     position: absolute;
+     width: 30px;
+     height: 2px;
+     background-color: #fff;
+     cursor: pointer;
+     border-radius: var(--border-Radius);
+     transition: var(--trans);
+}
+
+.newEpisodeCheckboxLabel::after {
+     top: 6px;
+}
+
+.newEpisodeCheckboxLabel::before {
+     top: -6px;
+}
+
+#newEpisodeCheckbox:checked+.newEpisodeCheckboxLabel {
+     background: transparent;
+}
+
+#newEpisodeCheckbox:checked~.newEpisodeCheckboxLabel::before {
+     transform: rotate(45deg);
+     top: 0;
+}
+
+#newEpisodeCheckbox:checked~.newEpisodeCheckboxLabel::after {
+     transform: rotate(-45deg);
+     top: 0;
 }
 
 .new-episode-list {
      display: flex;
      align-items: center;
-     gap: 20px;
+     gap: 10px;
+     transition: var(--trans);
 }
 
 .new-episode-button-container li {
@@ -522,7 +572,7 @@ section {
 
 .card-episode img {
      width: 90px;
-     object-fit: cover;
+     object-fit: fill;
      border-radius: var(--border-Radius);
 }
 
