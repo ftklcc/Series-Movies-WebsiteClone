@@ -69,6 +69,11 @@
           background-color: rgba(0, 0, 0, 0.413);
      }
 
+     .newEpisodeCheckboxLabel {
+
+          display: flex;
+     }
+
      #hamburgerCheck:checked~.nav-list {
           transform: translateY(0);
           opacity: 1;
