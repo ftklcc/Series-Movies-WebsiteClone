@@ -52,6 +52,8 @@ html {
      -moz-text-size-adjust: none;
      -webkit-text-size-adjust: none;
      text-size-adjust: none;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
 }
 
 body {
@@ -168,6 +170,7 @@ section {
 }
 
 /** Header Top */
+
 .header-top {
      background: var(--nav-clr);
      display: flex;
@@ -246,6 +249,67 @@ section {
      box-shadow: 0 0 0 1px var(--link-active);
 }
 
+/**Hamburger Menu  */
+
+
+.hamburger {
+     width: 30px;
+     height: 4px;
+     color: #fff;
+     background-color: #fff;
+     border-radius: var(--border-Radius);
+     position: relative;
+     cursor: pointer;
+     z-index: 2;
+     transition: var(--trans);
+     margin-left: 20px;
+}
+
+.hamburger::before,
+.hamburger::after {
+     content: "";
+     position: absolute;
+     height: 4px;
+     z-index: 1;
+     right: 0;
+     border-radius: var(--border-Radius);
+     background-color: #fff;
+     transition: var(--trans);
+}
+
+.hamburger::before {
+     width: 30px;
+     top: -10px;
+}
+
+.hamburger::after {
+     width: 30px;
+     top: 10px;
+}
+
+#hamburgerCheck,
+.hamburger,
+.hamburgerLabel {
+     display: none;
+}
+
+#hamburgerCheck:checked+label .hamburger {
+     background: transparent;
+}
+
+#hamburgerCheck:checked+label .hamburger::before {
+     top: 0;
+     width: 100%;
+     transform: rotate(45deg);
+}
+
+#hamburgerCheck:checked+label .hamburger::after {
+     top: 0;
+     width: 100%;
+     transform: rotate(-45deg);
+}
+
+
 /** NAVBAR */
 .nav-bar {
      background-color: var(--nav-clr-2);
@@ -259,6 +323,7 @@ section {
      padding: 20px;
      margin: 2px;
      font-size: var(--font-size-p);
+     transition: var(--trans);
 }
 
 .nav-list li {
@@ -512,7 +577,6 @@ section {
 .addseries-left {
      display: flex;
      align-items: center;
-     gap: 20px;
      background-color: rgb(46, 46, 46);
      border-radius: var(--border-Radius);
 }
@@ -538,7 +602,7 @@ section {
 .addseries-right a {
      background-color: rgb(46, 46, 46);
      border-radius: var(--border-Radius);
-     padding: 10px;
+     padding: 4px 10px;
 }
 
 /** add series Card */
