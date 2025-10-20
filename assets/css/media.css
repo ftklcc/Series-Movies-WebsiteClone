@@ -1,4 +1,8 @@
 @media screen and (max-width:780px) {
+     h3 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+     }
 
      .header-top {
           padding: 20px;
@@ -76,6 +80,23 @@
 
      .new-episode-list {
           flex-wrap: wrap;
+     }
+
+     .card-addseries {
+          place-items: center;
+     }
+
+     .card-addseries img {
+          width: 150px;
+     }
+
+     .footer {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     .footer h6 {
+          font-size: 1.4rem;
      }
 }
 
