@@ -1,712 +1,700 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/media.css" />
+	</head>
 
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-     <title>Document</title>
-     <link rel="stylesheet" href="./assets/css/style.css">
-     <link rel="stylesheet" href="./assets/css/media.css">
-</head>
+	<body>
+		<div class="container">
+			<!---------- HEADER  ---------->
+			<header>
+				<!---------- HEADER TOP ---------->
+				<div class="header-top">
+					<div class="header-left">
+						<h1>
+							<a href="#">LOGO</a>
+						</h1>
+					</div>
+					<div class="header-center">
+						<form id="search-form">
+							<input type="text" id="search" placeholder="Search..." />
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</form>
+					</div>
+					<div class="header-right">
+						<a href="#" class="btn btn-login">Login</a>
+						<a href="#" class="btn btn-sign">Sign</a>
+					</div>
+				</div>
+				<!---------- NAV BAR ---------->
 
-<body>
-     <div class="container">
-          <!---------- HEADER  ---------->
-          <header>
-               <!---------- HEADER TOP ---------->
-               <div class="header-top">
+				<nav class="nav-bar">
+					<input type="checkbox" name="" id="hamburgerCheck" />
+					<label for="hamburgerCheck">
+						<div class="hamburger"></div>
+					</label>
+					<ul class="nav-list">
+						<li class="nav-active">
+							<i class="fa-solid fa-house-chimney"></i>
+							<a href="#">home</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-tv"></i>
+							<a href="#">series</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-film"></i>
+							<a href="#">movies</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-arrow-trend-up"></i>
+							<a href="#">trend</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-plus"></i>
+							<a href="#">channel</a>
+						</li>
+						<li>
+							<i class="fa-brands fa-cc-discover"></i>
+							<a href="#">discover</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-message"></i>
+							<a href="#">contact</a>
+						</li>
+					</ul>
+				</nav>
 
-                    <div class="header-left">
-                         <h1>
-                              <a href="#">LOGO</a>
-                         </h1>
-                    </div>
-                    <div class="header-center">
-                         <form id="search-form">
-                              <input type="text" id="search" placeholder="Search...">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                         </form>
-                    </div>
-                    <div class="header-right">
-                         <a href="#" class="btn btn-login">Login</a>
-                         <a href="#" class="btn btn-sign">Sign</a>
-                    </div>
+				<!---------- HERO  ---------->
+				<div class="hero">
+					<div class="hero-title">
+						<h3>popular TV series</h3>
+						<div class="hero-button-container">
+							<button class="btn prev-btn">&#8678;</button>
+							<button class="btn next-btn">&#8680;</button>
+						</div>
+					</div>
+					<ul class="hero-trend">
+						<!-- hero-card1 -->
+						<li class="hero-card">
+							<a href="#"><img src="./assets/images/imagesHero/t1.jpg" alt="monster picture" /></a>
+						</li>
+						<!-- hero-card1 -->
+						<li class="hero-card">
+							<a href="#"><img src="./assets/images/imagesHero/t2.jpg" alt="wayward picture" /></a>
+						</li>
+						<!-- hero-card1 -->
+						<li class="hero-card">
+							<a href="#"><img src="./assets/images/imagesHero/t3.jpg" alt="house-of-guinnes picture" /></a>
+						</li>
+						<!-- hero-card1 -->
+						<li class="hero-card">
+							<a href="#"><img src="./assets/images/imagesHero/t4.jpg" alt="peacemaker picture" /></a>
+						</li>
+						<!-- hero-card1 -->
+						<li class="hero-card">
+							<a href="#"><img src="./assets/images/imagesHero/t5.jpg" alt="black-rabbit picture" /></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!---------- HEADER END  ---------->
+			<!---------- MAİN START ---------->
+			<main>
+				<!---------- NEW EPİSODE SECTİON START ---------->
+				<section class="new-episode">
+					<h3>New Episode</h3>
+					<div class="new-episode-button-container">
+						<input type="checkbox" id="newEpisodeCheckbox" />
+						<label for="newEpisodeCheckbox">
+							<div class="newEpisodeCheckboxHamburger"></div>
+						</label>
 
-               </div>
-               <!---------- NAV BAR ---------->
+						<ul class="new-episode-list">
+							<li class="newEpisode-list-item list-item-active"><a href="#">New Episode</a></li>
+							<li class="newEpisode-list-item"><a href="#">Foreign Series</a></li>
+							<li class="newEpisode-list-item"><a href="#">Dubbed Series</a></li>
+							<li class="newEpisode-list-item"><a href="#">Anime</a></li>
+							<li class="newEpisode-list-item"><a href="#">Asian Series</a></li>
+						</ul>
+						<a class="allEpisode" href="#">All</a>
+					</div>
+					<!-- episodes -->
+					<article class="episodes">
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c1.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>the rainmaker</h6>
+									<p>season 1, episode 10</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c2.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>fire country</h6>
+									<p>season 4, episode 10</p>
+									<div class="card-episode-info">
+										<p>1 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c3.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>typhoon family</h6>
+									<p>season 1, episode 3</p>
+									<div class="card-episode-info">
+										<p>30 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c4.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>boston blue</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>25 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c5.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>sheriff country</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">dubbed</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c6.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>the sentinels</h6>
+									<p>season 1, episode 4</p>
+									<div class="card-episode-info">
+										<p>55 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c7.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>doc</h6>
+									<p>season 2, episode 10</p>
+									<div class="card-episode-info">
+										<p>41 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c8.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>the rainmaker</h6>
+									<p>season 6, episode 10</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c9.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>let this grieving</h6>
+									<p>season 2, episode 3</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c10.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>SANDA</h6>
+									<p>season 4, episode 7</p>
+									<div class="card-episode-info">
+										<p>21 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c11.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c12.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c13.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c14.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c15.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c16.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c17.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c18.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c19.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c20.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+						<!-- CARD  start -->
+						<a href="#">
+							<div class="card-episode">
+								<img src="./assets/images/imagesCard/c21.jpg" alt="" />
+								<div class="card-episode-title">
+									<h6>name</h6>
+									<p>season 1, episode 1</p>
+									<div class="card-episode-info">
+										<p>17 minute ago</p>
+										<span class="card-span">Subtitled</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- CARD END -->
+					</article>
+				</section>
+				<!---------- NEW EPİSODE SECTİON END  ---------->
 
-
-               <nav class="nav-bar">
-                    <input type="checkbox" name="" id="hamburgerCheck">
-                    <label for="hamburgerCheck">
-                         <div class="hamburger"></div>
-                    </label>
-                    <ul class="nav-list">
-                         <li class="nav-active">
-                              <i class="fa-solid fa-house-chimney"></i>
-                              <a href="#">home</a>
-                         </li>
-                         <li>
-                              <i class="fa-solid fa-tv"></i>
-                              <a href="#">series</a>
-                         </li>
-                         <li>
-                              <i class="fa-solid fa-film"></i>
-                              <a href="#">movies</a>
-                         </li>
-                         <li>
-                              <i class="fa-solid fa-arrow-trend-up"></i>
-                              <a href="#">trend</a>
-                         </li>
-                         <li>
-                              <i class="fa-solid fa-plus"></i>
-                              <a href="#">channel</a>
-                         </li>
-                         <li>
-                              <i class="fa-brands fa-cc-discover"></i>
-                              <a href="#">discover</a>
-                         </li>
-                         <li>
-                              <i class="fa-solid fa-message"></i>
-                              <a href="#">contact</a>
-                         </li>
-                    </ul>
-               </nav>
-
-               <!---------- HERO  ---------->
-               <div class="hero">
-                    <div class="hero-title">
-                         <h3>popular TV series</h3>
-                         <div class="hero-button-container">
-                              <button class="btn prev-btn">&#8678;</button>
-                              <button class="btn next-btn">&#8680;</button>
-                         </div>
-                    </div>
-                    <ul class="hero-trend">
-                         <!-- hero-card1 -->
-                         <li class="hero-card">
-                              <a href="#"><img src="./assets/images/imagesHero/t1.jpg" alt="monster picture"></a>
-                         </li>
-                         <!-- hero-card1 -->
-                         <li class="hero-card">
-                              <a href="#"><img src="./assets/images/imagesHero/t2.jpg" alt="wayward picture"></a>
-                         </li>
-                         <!-- hero-card1 -->
-                         <li class="hero-card">
-                              <a href="#"><img src="./assets/images/imagesHero/t3.jpg"
-                                        alt="house-of-guinnes picture"></a>
-
-                         </li>
-                         <!-- hero-card1 -->
-                         <li class="hero-card">
-                              <a href="#"><img src="./assets/images/imagesHero/t4.jpg" alt="peacemaker picture"></a>
-
-                         </li>
-                         <!-- hero-card1 -->
-                         <li class="hero-card">
-                              <a href="#"><img src="./assets/images/imagesHero/t5.jpg" alt="black-rabbit picture"></a>
-                         </li>
-                    </ul>
-               </div>
-          </header>
-          <!---------- HEADER END  ---------->
-          <!---------- MAİN START ---------->
-          <main>
-               <!---------- NEW EPİSODE SECTİON START ---------->
-               <section class="new-episode">
-                    <h3>New Episode</h3>
-                    <div class="new-episode-button-container">
-
-
-
-
-                         <input type="checkbox" id="newEpisodeCheckbox">
-                         <label for="newEpisodeCheckbox">
-                              <div class="newEpisodeCheckboxHamburger"></div>
-                         </label>
-
-
-
-
-                         <ul class="new-episode-list">
-                              <li class="newEpisode-list-item list-item-active"><a href="#">New Episode</a></li>
-                              <li class="newEpisode-list-item"><a href="#">Foreign Series</a></li>
-                              <li class="newEpisode-list-item"><a href="#">Dubbed Series</a></li>
-                              <li class="newEpisode-list-item"><a href="#">Anime</a></li>
-                              <li class="newEpisode-list-item"><a href="#">Asian Series</a></li>
-                         </ul>
-                         <a class="allEpisode" href="#">All</a>
-                    </div>
-                    <!-- episodes -->
-                    <article class="episodes">
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c1.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>the rainmaker</h6>
-                                        <p>season 1, episode 10</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c2.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>fire country</h6>
-                                        <p>season 4, episode 10</p>
-                                        <div class="card-episode-info">
-                                             <p>1 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c3.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>typhoon family</h6>
-                                        <p>season 1, episode 3</p>
-                                        <div class="card-episode-info">
-                                             <p>30 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c4.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>boston blue</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>25 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c5.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>sheriff country</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">dubbed</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c6.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>the sentinels</h6>
-                                        <p>season 1, episode 4</p>
-                                        <div class="card-episode-info">
-                                             <p>55 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c7.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>doc</h6>
-                                        <p>season 2, episode 10</p>
-                                        <div class="card-episode-info">
-                                             <p>41 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c8.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>the rainmaker</h6>
-                                        <p>season 6, episode 10</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c9.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>let this grieving</h6>
-                                        <p>season 2, episode 3</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c10.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>SANDA</h6>
-                                        <p>season 4, episode 7</p>
-                                        <div class="card-episode-info">
-                                             <p>21 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c11.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c12.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c13.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c14.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c15.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c16.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c17.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c18.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c19.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c20.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                         <!-- CARD  start -->
-                         <a href="#">
-                              <div class="card-episode">
-                                   <img src="./assets/images/imagesCard/c21.jpg" alt="">
-                                   <div class="card-episode-title">
-                                        <h6>name</h6>
-                                        <p>season 1, episode 1</p>
-                                        <div class="card-episode-info">
-                                             <p>17 minute ago</p>
-                                             <span class="card-span">Subtitled</span>
-                                        </div>
-                                   </div>
-                              </div>
-                         </a>
-                         <!-- CARD END -->
-                    </article>
-               </section>
-               <!---------- NEW EPİSODE SECTİON END  ---------->
-
-               <!---------- ADD SERİES AND MOVİES START ---------->
-               <section class="add-series">
-                    <h3>Newly Added Series</h3>
-                    <div class="addseries-button-container">
-                         <div class="addseries-left">
-                              <a href="#" class="addseries-active">new add</a>
-                              <a href="#">IMDb 7+ </a>
-                              <a href="#">domestic series</a>
-                         </div>
-                         <div class="addseries-right">
-                              <a href="#">all</a>
-                         </div>
-                    </div>
-                    <article class="card-addseries">
-
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a1.jpg" alt="enfes bir akşam">
-                                   <p>enfes bir akşam</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a2.jpg" alt="enfes bir akşam">
-                                   <p>a killer among</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a3.jpg" alt="enfes bir akşam">
-                                   <p>royal family</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a4.jpg" alt="enfes bir akşam">
-                                   <p>boston blue</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a5.jpg" alt="enfes bir akşam">
-                                   <p>sheriff country</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a6.jpg" alt="enfes bir akşam">
-                                   <p>murdoch</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a7.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a8.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a9.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a10.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a11.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a12.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a13.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a14.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a15.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a16.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a17.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-                         <!-- card Start -->
-                         <a href="">
-                              <div class="card-addserie">
-                                   <img src="./assets/images/imagesAddSeries/a18.jpg" alt="enfes bir akşam">
-                                   <p>name</p>
-                                   <p>category</p>
-                              </div>
-                         </a>
-                         <!-- card End -->
-
-                    </article>
-               </section>
-               <!---------- ADD SERİES AND MOVİES END  ---------->
-               <!---------- ABOUT ME  ---------->
-               <section class="about">
-                    <h6>ABOUT</h6>
-                    <p>Watching foreign TV series is one of the best ways to enjoy a pleasant evening! With captivating
-                         stories, high-quality productions, and series from all over the world, you can experience
-                         unforgettable moments in front of the screen. Our platform offers a wide selection, from the
-                         most popular series to cult classics, making it easy to find the series you're looking for.</p>
-                    <br>
-                    <p>Whatever your favorite genre may be, from action to comedy, drama to science fiction, thousands
-                         of foreign series are waiting for you to discover. Plus, with our high image quality and
-                         user-friendly interface, we take your series viewing experience to the highest level.</p> <br>
-                    <p>From timeless favorites to the latest hits, you can access the most up-to-date content here. Step
-                         into the world of TV series with an ad-free, fast, and uninterrupted viewing experience. End
-                         your search for foreign TV series—your favorite shows are just a click away!</p><br>
-                    <p>✨ Most-watched foreign TV series</p>
-                    <p>🎬 Productions in the spotlight with their new seasons</p>
-                    <p>📺 Filtering by type and personalized recommendations</p><br>
-                    <p>Start exploring now to enjoy the full TV series experience! 🌟</p>
-               </section>
-          </main>
-          <!---------- MAİN END  ---------->
-          <!---------- FOOTER START  ---------->
-          <footer>
-               <section class="footer">
-                    <!---------- FOOTER LEFT  ---------->
-                    <article class="footer-left">
-                         <div class="footer-1">
-                              <h6>Trending Series</h6>
-                              <ul class="footer-list">
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                              </ul>
-                         </div>
-                         <div class="footer-2">
-                              <h6>information</h6>
-                              <ul class="footer-list">
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                              </ul>
-                         </div>
-                         <div class="footer-3">
-                              <h6>suggestion</h6>
-                              <ul class="footer-list">
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                                   <li class="footer-list-item"><a href="#">LİNK 1</a></li>
-                              </ul>
-                         </div>
-                    </article>
-                    <!---------- FOOTER RİGHT  ---------->
-                    <article class="footer-right">
-                         <h2>LOGO</h2>
-                         <h6>copyright 2020</h6>
-                    </article>
-               </section>
-
-          </footer>
-          <!---------- FOOTER END  ---------->
-     </div>
-</body>
-
+				<!---------- ADD SERİES AND MOVİES START ---------->
+				<section class="add-series">
+					<h3>Newly Added Series</h3>
+					<div class="addseries-button-container">
+						<div class="addseries-left">
+							<a href="#" class="addseries-active">new add</a>
+							<a href="#">IMDb 7+ </a>
+							<a href="#">domestic series</a>
+						</div>
+						<div class="addseries-right">
+							<a href="#">all</a>
+						</div>
+					</div>
+					<article class="card-addseries">
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a1.jpg" alt="enfes bir akşam" />
+								<p>enfes bir akşam</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a2.jpg" alt="enfes bir akşam" />
+								<p>a killer among</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a3.jpg" alt="enfes bir akşam" />
+								<p>royal family</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a4.jpg" alt="enfes bir akşam" />
+								<p>boston blue</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a5.jpg" alt="enfes bir akşam" />
+								<p>sheriff country</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a6.jpg" alt="enfes bir akşam" />
+								<p>murdoch</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a7.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a8.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a9.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a10.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a11.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a12.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a13.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a14.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a15.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a16.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a17.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+						<!-- card Start -->
+						<a href="">
+							<div class="card-addserie">
+								<img src="./assets/images/imagesAddSeries/a18.jpg" alt="enfes bir akşam" />
+								<p>name</p>
+								<p>category</p>
+							</div>
+						</a>
+						<!-- card End -->
+					</article>
+				</section>
+				<!---------- ADD SERİES AND MOVİES END  ---------->
+				<!---------- ABOUT ME  ---------->
+				<section class="about">
+					<h6>ABOUT</h6>
+					<p>
+						Watching foreign TV series is one of the best ways to enjoy a pleasant evening! With captivating stories, high-quality productions, and
+						series from all over the world, you can experience unforgettable moments in front of the screen. Our platform offers a wide selection,
+						from the most popular series to cult classics, making it easy to find the series you're looking for.
+					</p>
+					<br />
+					<p>
+						Whatever your favorite genre may be, from action to comedy, drama to science fiction, thousands of foreign series are waiting for you to
+						discover. Plus, with our high image quality and user-friendly interface, we take your series viewing experience to the highest level.
+					</p>
+					<br />
+					<p>
+						From timeless favorites to the latest hits, you can access the most up-to-date content here. Step into the world of TV series with an
+						ad-free, fast, and uninterrupted viewing experience. End your search for foreign TV series—your favorite shows are just a click away!
+					</p>
+					<br />
+					<p>✨ Most-watched foreign TV series</p>
+					<p>🎬 Productions in the spotlight with their new seasons</p>
+					<p>📺 Filtering by type and personalized recommendations</p>
+					<br />
+					<p>Start exploring now to enjoy the full TV series experience! 🌟</p>
+				</section>
+			</main>
+			<!---------- MAİN END  ---------->
+			<!---------- FOOTER START  ---------->
+			<footer>
+				<section class="footer">
+					<!---------- FOOTER LEFT  ---------->
+					<article class="footer-left">
+						<div class="footer-1">
+							<h6>Trending Series</h6>
+							<ul class="footer-list">
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+							</ul>
+						</div>
+						<div class="footer-2">
+							<h6>information</h6>
+							<ul class="footer-list">
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+							</ul>
+						</div>
+						<div class="footer-3">
+							<h6>suggestion</h6>
+							<ul class="footer-list">
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+								<li class="footer-list-item"><a href="#">LİNK 1</a></li>
+							</ul>
+						</div>
+					</article>
+					<!---------- FOOTER RİGHT  ---------->
+					<article class="footer-right">
+						<h2>LOGO</h2>
+						<h6>copyright 2020</h6>
+					</article>
+				</section>
+			</footer>
+			<!---------- FOOTER END  ---------->
+		</div>
+	</body>
 </html>

@@ -26,12 +26,19 @@
           padding: 4px 8px;
      }
 
+     .header-right {
+          position: absolute;
+          top: 92px;
+          z-index: 1;
+     }
+
      .nav-bar {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: end;
           position: relative;
           height: 50px;
+          margin: 1px 0;
      }
 
      .hamburger,

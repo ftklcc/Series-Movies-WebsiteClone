@@ -204,7 +204,6 @@ section {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     gap: 10px;
      transition: var(--trans);
 }
 
@@ -262,7 +261,7 @@ section {
      cursor: pointer;
      z-index: 2;
      transition: var(--trans);
-     margin-left: 20px;
+     margin-right: 20px;
 }
 
 .hamburger::before,
