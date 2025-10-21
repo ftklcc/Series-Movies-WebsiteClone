@@ -279,12 +279,12 @@ section {
 
 .hamburger::before {
      width: 30px;
-     top: -10px;
+     top: -6px;
 }
 
 .hamburger::after {
      width: 30px;
-     top: 10px;
+     top: 7px;
 }
 
 #hamburgerCheck,
@@ -441,16 +441,19 @@ section {
      align-items: center;
      justify-content: space-between;
      margin: 20px 0;
+     position: relative;
 }
 
 /** new episde hamburger start  */
-#newEpisodeCheckbox {
+#newEpisodeCheckbox,
+.new-episode label,
+.newEpisodeCheckboxHamburger {
      display: none;
 }
 
-.newEpisodeCheckboxLabel {
+.newEpisodeCheckboxHamburger {
      width: 30px;
-     height: 2px;
+     height: 4px;
      background-color: #fff;
      position: relative;
      border-radius: var(--border-Radius);
@@ -459,36 +462,36 @@ section {
      display: none;
 }
 
-.newEpisodeCheckboxLabel::before,
-.newEpisodeCheckboxLabel::after {
+.newEpisodeCheckboxHamburger::before,
+.newEpisodeCheckboxHamburger::after {
      content: "";
      position: absolute;
      width: 30px;
-     height: 2px;
+     height: 4px;
      background-color: #fff;
      cursor: pointer;
      border-radius: var(--border-Radius);
      transition: var(--trans);
 }
 
-.newEpisodeCheckboxLabel::after {
+.newEpisodeCheckboxHamburger::after {
      top: 6px;
 }
 
-.newEpisodeCheckboxLabel::before {
+.newEpisodeCheckboxHamburger::before {
      top: -6px;
 }
 
-#newEpisodeCheckbox:checked+.newEpisodeCheckboxLabel {
+#newEpisodeCheckbox:checked+label .newEpisodeCheckboxHamburger {
      background: transparent;
 }
 
-#newEpisodeCheckbox:checked~.newEpisodeCheckboxLabel::before {
+#newEpisodeCheckbox:checked~label .newEpisodeCheckboxHamburger::before {
      transform: rotate(45deg);
      top: 0;
 }
 
-#newEpisodeCheckbox:checked~.newEpisodeCheckboxLabel::after {
+#newEpisodeCheckbox:checked~label .newEpisodeCheckboxHamburger::after {
      transform: rotate(-45deg);
      top: 0;
 }
@@ -498,6 +501,7 @@ section {
      align-items: center;
      gap: 10px;
      transition: var(--trans);
+     position: relative;
 }
 
 .new-episode-button-container li {
@@ -516,6 +520,7 @@ section {
 }
 
 .new-episode-button-container a {
+     display: block;
      font-size: var(--font-size-p);
      color: var(--text-clr);
      letter-spacing: 0.4px;
