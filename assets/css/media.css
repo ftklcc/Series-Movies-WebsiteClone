@@ -140,9 +140,6 @@
 
 
 @media screen and (max-width:490px) {
-     .header-left {
-          display: none;
-     }
 
      .header-center #search-form {
           max-width: 200px;
